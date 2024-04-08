@@ -10,7 +10,7 @@ export const addToWatchList = async (formData: FormData) => {
   const session = await getServerSession(options);
   const data = await prisma.watchList.create({
     data: {
-      userId: session?.user?.email,
+      userId: session?.user?.email as string,
       movieId: Number(movieId),
     },
   });
