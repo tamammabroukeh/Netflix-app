@@ -18,7 +18,15 @@ export interface IMovieVideo {
   overview: string;
   title: string;
   state: boolean;
-  changeState?: (state: boolean) => void;
+  changeState: (state: boolean) => void;
+  youtubeUrl: string;
+  age: number;
+  time: number;
+  year: number;
+}
+export interface IMovieButton {
+  overview: string;
+  title: string;
   youtubeUrl: string;
   age: number;
   time: number;

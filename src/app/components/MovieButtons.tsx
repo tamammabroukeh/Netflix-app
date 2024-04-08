@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { IMovieVideo } from "@/interfaces/interfaces";
+import { IMovieButton } from "@/interfaces/interfaces";
 import { InfoIcon, PlayCircle } from "lucide-react";
 import { useState } from "react";
 import MovieVideoModal from "./MovieVideoModal";
@@ -11,7 +11,7 @@ const MovieButtons = ({
   title,
   year,
   youtubeUrl,
-}: IMovieVideo) => {
+}: IMovieButton) => {
   const [open, setOpen] = useState(false);
   return (
     <>

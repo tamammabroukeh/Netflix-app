@@ -38,7 +38,6 @@ const MovieVideo = async () => {
         <p className="line-clamp-3 text-white text-lg mt-5">{data?.overview}</p>
         <div className="flex gap-x-4 mt-4">
           <MovieButtons
-            state
             age={data?.age as number}
             overview={data?.overview as string}
             time={data?.duration as number}
